@@ -1,7 +1,12 @@
-<h2 class="subhead"><%= @post.artist %></h2>
-<!-- photo -->
-<%= @post.caption %>
-<br>
-<%= @post.city %>, <%= @post.date %>
-<br>
-Posted by <%= @post.user.email %>
+<div class="body">
+	<h2 class="subhead"><%= @post.artist %></h2>
+	<%= image_tag @post.photo.url(:medium) %>
+	<br>
+	<%= @post.caption %>
+	<br>
+	<%= @post.city %>, <%= @post.date %>
+	<br>
+	<%= link_to "Post a Photo", new_post_path %>
+	<br>
+	<%= link_to "See All the Photos", posts_path %>
+</div>

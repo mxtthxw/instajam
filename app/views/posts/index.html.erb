@@ -1,2 +1,8 @@
-<h1>Posts#index</h1>
-<p>Find me in app/views/posts/index.html.erb</p>
+<% @posts.each do |p| %>
+	<span class="subhead"><%= link_to p.artist, post_path(p.id) %></span>
+	<br>
+	<%= image_tag p.photo.url(:thumb) %>
+	<br>
+	<hr>
+<% end %>
+<%= link_to "Post a Photo", new_post_path %>

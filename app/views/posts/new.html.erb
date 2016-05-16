@@ -1,6 +1,6 @@
 <h2 class="subhead">Post your photo!</h2>
 <div class="body">
-	<%= form_for @post do |f| %>
+	<%= form_for @post, html: { multipart: true } do |f| %>
 		<%= f.label :artist %>
 		<%= f.text_field :artist %>
 		<br>
@@ -12,6 +12,9 @@
 		<br>
 		<%= f.label :date %>
 		<%= f.date_field :date %>
+		<br>
+		<%= f.label :photo %>
+		<%= f.file_field :photo %>
 		<br>
 		<%= f.submit %>
 	<% end %>

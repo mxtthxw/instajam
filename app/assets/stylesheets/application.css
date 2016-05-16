@@ -21,7 +21,7 @@
 
 .wrapper {
 	width: 1000px;
-	height: 200px;
+	height: 150px;
 	margin: 0 auto;
 }
 
@@ -39,4 +39,5 @@
 
 .body {
 	color: white;
+	margin-left: 150px;
 }
