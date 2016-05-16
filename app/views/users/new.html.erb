@@ -1,0 +1,12 @@
+<h2 class="subhead">Please enter the following:</h2>
+<div class="body">
+	<%= form_for @user do |f| %>
+		<%= f.label :email %>
+		<%= f.text_field :email %>
+		<br>
+		<%= f.label :password %>
+		<%= f.password_field :password %>
+		<br>
+		<%= f.submit %>
+	<% end %>
+</div>

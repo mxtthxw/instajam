@@ -1,0 +1,18 @@
+<h2 class="subhead">Post your photo!</h2>
+<div class="body">
+	<%= form_for @post do |f| %>
+		<%= f.label :artist %>
+		<%= f.text_field :artist %>
+		<br>
+		<%= f.label :caption %>
+		<%= f.text_field :caption %>
+		<br>
+		<%= f.label :city %>
+		<%= f.text_field :city %>
+		<br>
+		<%= f.label :date %>
+		<%= f.date_field :date %>
+		<br>
+		<%= f.submit %>
+	<% end %>
+</div>
